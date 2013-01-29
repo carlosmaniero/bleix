@@ -1,0 +1,44 @@
+/* Resets */
+.ui-mobile .ui-mobile-no-margin{ margin: 0 !important; }
+.ui-mobile .ui-mobile-no-border{ border: 0 !important; }
+.ui-mobile .ui-mobile-no-padding{ padding: 0 !important; }
+
+/* Position */
+.ui-mobile .ui-mobile-relative{ position: relative; }
+.ui-mobile .ui-mobile-absolute{ position: absolute; }
+.ui-mobile .ui-mobile-fixed{ position: fixed; }
+.ui-mobile .ui-mobile-inherit{ position: inherit; }
+
+/* Padding no topo e no bottom */
+.ui-mobile .ui-padding,
+.ui-mobile .ui-mobile-padding{ padding: 5%; }
+
+/* Centraliza o conteúdo */
+.ui-mobile .ui-center{ width: 100%; }
+.ui-mobile .ui-center.ui-padding{ width: 90%; }
+.ui-mobile .ui-center.ui-little{ width: 80%; margin: 0 auto; }
+.ui-mobile .ui-center.ui-padding.ui-little{ width: 70%; }
+
+/* Deixa conteúdo com 100% de largura */
+.ui-mobile .ui-mobile-fullsize{ width: 100% !important; }
+.ui-mobile .ui-mobile-fullsize.ui-mobile-padding{ width: 80% !important; }
+.ui-mobile .ui-mobile-fullsize.ui-button{ padding: 5px 0; }
+
+/* Oculta na versão mobile */
+.ui-mobile .ui-mobile-hidden{ display: none; }
+/* visível versão mobile */
+.ui-mobile .ui-mobile-visible{ display: block !important; }
+
+/* Floats. Por padrão a versão mobile, reseta os floats */
+.ui-mobile .ui-left, .ui-mobile .ui-right{ float: none; }
+.ui-mobile .ui-mobile-left{ float: left; }
+.ui-mobile .ui-mobile-right{ float: right; }
+
+/* Orientação do texto */
+.ui-mobile .ui-mobile-text-left{ text-align: left; }
+.ui-mobile .ui-mobile-text-center{ text-align: center; }
+.ui-mobile .ui-mobile-text-justify{ text-align: justify; }
+.ui-mobile .ui-mobile-text-right{ text-align: right; }
+
+/* Inputs */
+.ui-mobile .ui-input{ width: 100%; padding: 2%; }

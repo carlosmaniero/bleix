@@ -1,0 +1,4 @@
+body{ font-size: 14px; font-family: 'Droid Serif', serif; color: #1a1a1a; }
+body, p, ul, li,h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; }
+input, select, textarea{ font-size: inherit; font-family: inherit;  }
+a{ color: inherit; }

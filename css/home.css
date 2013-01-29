@@ -1,0 +1,4 @@
+body{ font-family: sans-serif; background: #ffffff; font-family: Raleway; font-weight: 100; }
+header{ background: url(../images/header-bg.jpg) top left #184448; color: #fff; text-shadow: 1px 1px 1px #000000; }
+header h1{ font-size: 1000%; }
+header h2{ font-weight: 100; font-size: 200%; }
