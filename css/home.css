@@ -7,4 +7,7 @@ header h2{ font-weight: 100; font-size: 200%; }
 #about h2{ font-size: 150%; }
 #about-easy{ width: 400px; }
 
+#resources{ border-top: 1px solid #eeeeee; }
+#resources h1{ font-size: 300%; font-weight: 100; }
+
 footer{ background: #eee; border-top: 1px solid #ddd; color: #ccc; text-shadow: 1px 1px 0 #FFF; }

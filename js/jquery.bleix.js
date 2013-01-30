@@ -80,9 +80,14 @@
 			$(window).resize(set_column);
 		});
 
+	}
+
+	$(document).ready(function(){
 		// Navegação
 		$('.bx-mobile-menu-icon').click(function(){
 			$(this).parents('.bx-mobile-nav').find('.bx-mobile-nav-list').toggle(500);
 		});
-	}
+	});
+
+
 })(jQuery);
