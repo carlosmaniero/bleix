@@ -47,23 +47,42 @@
 	$.fn.BleixColumn = function(settings){
 
 		var options = {
-			min_size : 200
+			min_size : 250
 		}
 
 		$.extend(options,settings);
 
 		$(this).each(function(){
-			var columns = $(this).find('.bx-column');	
-			var width = 100 / columns.length;
+			var elem = $(this);
+			
 			
 			function set_column(){
-				columns.width( width + '%' );
+				elem.find('.bx-column').removeClass('bx-column-wrapped');
 
-				if(columns.width() < options.min_size)
-					columns.width('');
+				var columns = elem.find('.bx-column').not('.bx-column-fixed');
+				var width = elem.width();
+
+				elem.find('.bx-column-fixed').each(function(){
+					width -= $(this).width();
+				});
+
+				width = parseInt(width);
+				width /= columns.length;
+				width = parseInt(width);
+
+				columns.width( width );
+
+				if(columns.width() < options.min_size){
+					elem.find('.bx-column').width('').addClass('bx-column-wrapped');
+				}
 			}
 			set_column();
 			$(window).resize(set_column);
+		});
+
+		// Navegação
+		$('.bx-mobile-menu-icon').click(function(){
+			$(this).parents('.bx-mobile-nav').find('.bx-mobile-nav-list').toggle(500);
 		});
 	}
 })(jQuery);
