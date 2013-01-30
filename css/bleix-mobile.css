@@ -28,6 +28,20 @@
 /* Elemento ocultos */
 .bx-mobile .bx-mobile-hidden{ display: none; }
 
+/* Padding default na versão web */
+.bx-mobile .bx-mobile-padding{ padding: 2%; }
+.bx-mobile .bx-mobile-padding-top{ padding-top: 2%; }
+.bx-mobile .bx-mobile-padding-left{ padding-left: 2%; }
+.bx-mobile .bx-mobile-padding-bottom{ padding-bottom: 2%; }
+.bx-mobile .bx-mobile-padding-right{ padding-right: 2%; }
+
+/* margin default na versão web */
+.bx-mobile .bx-mobile-margin{ margin: 2%; }
+.bx-mobile .bx-mobile-margin-top{ margin-top: 2%; }
+.bx-mobile .bx-mobile-margin-left{ margin-left: 2%; }
+.bx-mobile .bx-mobile-margin-bottom{ margin-bottom: 2%; }
+.bx-mobile .bx-mobile-margin-right{ margin-right: 2%; }
+
 /* Elementos inline */
 .bx-mobile .bx-mobile-inline{ display: inline-block; }
 /* Elementos blocados */
@@ -56,17 +70,3 @@
 .bx-mobile .bx-mobile-font-regular{ font-weight: normal; }
 .bx-mobile .bx-mobile-undeline{ text-decoration: underline; }
 .bx-mobile .bx-mobile-no-undeline{ text-decoration: none; }
-
-/* Padding default na versão web */
-.bx-mobile .bx-mobile-padding{ padding: 2%; }
-.bx-mobile .bx-mobile-padding-top{ padding-top: 2%; }
-.bx-mobile .bx-mobile-padding-left{ padding-left: 2%; }
-.bx-mobile .bx-mobile-padding-bottom{ padding-bottom: 2%; }
-.bx-mobile .bx-mobile-padding-right{ padding-right: 2%; }
-
-/* margin default na versão web */
-.bx-mobile .bx-mobile-margin{ margin: 2%; }
-.bx-mobile .bx-mobile-margin-top{ margin-top: 2%; }
-.bx-mobile .bx-mobile-margin-left{ margin-left: 2%; }
-.bx-mobile .bx-mobile-margin-bottom{ margin-bottom: 2%; }
-.bx-mobile .bx-mobile-margin-right{ margin-right: 2%; }

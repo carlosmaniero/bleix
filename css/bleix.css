@@ -28,6 +28,20 @@
 /* Elemento ocultos */
 .bx-hidden{ display: none; }
 
+/* Padding default na versão web */
+.bx-padding{ padding: 60px; }
+.bx-padding-top{ padding-top: 60px; }
+.bx-padding-left{ padding-left: 60px; }
+.bx-padding-bottom{ padding-bottom: 60px; }
+.bx-padding-right{ padding-right: 60px; }
+
+/* margin default na versão web */
+.bx-margin{ margin: 20px; }
+.bx-margin-top{ margin-top: 20px; }
+.bx-margin-left{ margin-left: 20px; }
+.bx-margin-bottom{ margin-bottom: 20px; }
+.bx-margin-right{ margin-right: 20px; }
+
 /* Elementos inline */
 .bx-inline{ display: inline-block; }
 /* Elementos blocados */
@@ -55,7 +69,7 @@
 /* Formatação de fonte */
 .bx-font-italic{ font-style: italic; }
 .bx-font-bold{ font-weight: bold; }
-.bx-font-regular{ font-style: normal; }
+.bx-font-regular{ font-weight: normal; }
 .bx-undeline{ text-decoration: underline; }
 .bx-no-undeline{ text-decoration: none; }
 
@@ -89,17 +103,3 @@
 .bx-button:hover{
 	background: #022665;
 }
-
-/* Padding default na versão web */
-.bx-padding{ padding: 60px; }
-.bx-padding-top{ padding-top: 60px; }
-.bx-padding-left{ padding-left: 60px; }
-.bx-padding-bottom{ padding-bottom: 60px; }
-.bx-padding-right{ padding-right: 60px; }
-
-/* margin default na versão web */
-.bx-margin{ margin: 20px; }
-.bx-margin-top{ margin-top: 20px; }
-.bx-margin-left{ margin-left: 20px; }
-.bx-margin-bottom{ margin-bottom: 20px; }
-.bx-margin-right{ margin-right: 20px; }
