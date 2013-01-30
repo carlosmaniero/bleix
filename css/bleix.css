@@ -75,6 +75,7 @@
 
 /* Colunas */
 .bx-column{ float: left; }
+.bx-column-wrapped{ width: 100% !important; }
 
 /* Botões */
 .bx-button{
