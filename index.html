@@ -4,25 +4,48 @@
 	<meta charset="UTF-8">
 	<title>Bleix - Responsive Layout</title>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.responsive-layout.js"></script>
+	<script type="text/javascript" src="js/jquery.bleix.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>
 	<!-- Fontes -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/bleix.css">
 	<link rel="stylesheet" href="css/home.css">
 	<!-- Mobile -->
-	<link rel="stylesheet" href="css/ui-mobile.css">
+	<link rel="stylesheet" href="css/bleix-mobile.css">
 	<link rel="stylesheet" href="css/home-mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 </head>
 <body>
 	<header>
-		<div class="ui-center ui-padding ui-text-center">
-			<h1>Bleix</h1>
-			<h2>Responsive Layout: One template, different dimensions</h2>
-			<a href="" class="ui-button ui-margin-top">Configure your Bleix</a>
+		<div class="bx-center">
+			<div class="bx-padding bx-text-center">
+				<h1>Bleix</h1>
+				<h2>Layout Responsivo: Um template, diferentes dimenções.</h2>
+				<a href="" class="bx-button bx-margin-top">Configurar seu Bleix</a>
+			</div>
 		</div>
 	</header>
+	<div class="bx-center" id="about">
+		<section class="bx-column">
+			<div class="bx-padding bx-no-padding-bottom">
+				<h2 class="bx-margin-bottom">Fácil de usar</h2>
+				<p class="bx-mobile-font-regular">O Bleix é super fácil de usar, basta seguir meia duzia de padrões e usar alguns plugin jQuery disponíveis.</p>
+				<p class="bx-mobile-font-regular">Leia nossa <a href="">documentação</a></p>
+			</div>
+		</section>
+		<section class="bx-column">
+			<div class="bx-padding bx-no-padding-bottom">
+				<h2 class="bx-margin-bottom">Leve</h2>
+				<p class="bx-mobile-font-regular">Com apenas <span class="bx-font-italic">00 kb</span> o Bleix, não pesa no seu projeto.</p>
+			</div>
+		</section>
+		<section class="bx-column">
+			<div class="bx-padding">
+				<h2 class="bx-margin-bottom">Customizável</h2>
+				<p class="bx-mobile-font-regular">Clique no botão <span class="bx-font-italic">Configurar o seu Bleix</span> e edite as configurações do seu Bleix utilizando nossa ferramenta online.</p>
+			</div>
+		</section>
+	</div>
 </body>
 </html>

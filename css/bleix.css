@@ -1,0 +1,105 @@
+/* Resets Margin */
+.bx-no-margin{ margin: 0 !important; }
+.bx-no-margin-top{ margin-top: 0 !important; }
+.bx-no-margin-right{ margin-right: 0 !important; }
+.bx-no-margin-bottom{ margin-bottom: 0 !important; }
+.bx-no-margin-left{ margin-left: 0 !important; }
+
+/* Resets Border */
+.bx-no-border{ border: 0 !important; }
+.bx-no-border-top{ border-top: 0 !important; }
+.bx-no-border-right{ border-right: 0 !important; }
+.bx-no-border-bottom{ border-bottom: 0 !important; }
+.bx-no-border-left{ border-left: 0 !important; }
+
+/* Resets Padding */
+.bx-no-padding{ padding: 0 !important; }
+.bx-no-padding-top{ padding-top: 0 !important; }
+.bx-no-padding-right{ padding-right: 0 !important; }
+.bx-no-padding-bottom{ padding-bottom: 0 !important; }
+.bx-no-padding-left{ padding-left: 0 !important; }
+
+/* Position */
+.bx-relative{ position: relative; }
+.bx-absolute{ position: absolute; }
+.bx-fixed{ position: fixed; }
+.bx-inherit{ position: inherit; }
+
+/* Elemento ocultos */
+.bx-hidden{ display: none; }
+
+/* Elementos inline */
+.bx-inline{ display: inline-block; }
+/* Elementos blocados */
+.bx-block{ display: block; }
+
+/* Limpa floats */
+.bx-clear{ clear: both; }
+
+/* Centraliza o conteúdo */
+.bx-center{ width: 980px; margin: 0 auto; }
+
+/* Elementos com largura máxima */
+.bx-fullsize{ width: 100%; }
+
+/* Floats */
+.bx-left{ float: left; }
+.bx-right{ float: right; }
+
+/* Orientação do texto */
+.bx-text-left{ text-align: left; }
+.bx-text-center{ text-align: center; }
+.bx-text-justify{ text-align: justify; }
+.bx-text-right{ text-align: right; }
+
+/* Formatação de fonte */
+.bx-font-italic{ font-style: italic; }
+.bx-font-bold{ font-weight: bold; }
+.bx-font-regular{ font-style: normal; }
+.bx-undeline{ text-decoration: underline; }
+.bx-no-undeline{ text-decoration: none; }
+
+/* Colunas */
+.bx-column{ float: left; }
+
+/* Botões */
+.bx-button{
+	background: #3d4e6b;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNkNGU2YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjI2NjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #3d4e6b 0%, #022665 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d4e6b), color-stop(100%,#022665)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3d4e6b 0%,#022665 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3d4e6b 0%,#022665 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3d4e6b 0%,#022665 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3d4e6b 0%,#022665 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4e6b', endColorstr='#022665',GradientType=0 ); /* IE6-8 */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: 0 0 5px #000000;
+	-moz-box-shadow: 0 0 5px #000000;
+	-webkit-box-shadow: 0 0 5px #000000;
+	-o-box-shadow: 0 0 5px #000000;
+	padding: 20px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: normal;
+}
+.bx-button:hover{
+	background: #022665;
+}
+
+/* Padding default na versão web */
+.bx-padding{ padding: 60px; }
+.bx-padding-top{ padding-top: 60px; }
+.bx-padding-left{ padding-left: 60px; }
+.bx-padding-bottom{ padding-bottom: 60px; }
+.bx-padding-right{ padding-right: 60px; }
+
+/* margin default na versão web */
+.bx-margin{ margin: 20px; }
+.bx-margin-top{ margin-top: 20px; }
+.bx-margin-left{ margin-left: 20px; }
+.bx-margin-bottom{ margin-bottom: 20px; }
+.bx-margin-right{ margin-right: 20px; }
