@@ -1,0 +1,29 @@
+/* Defaults */
+body{ font-family: sans-serif; background: #ffffff; font-family: Raleway, sans-serif; color: #000; }
+p{ line-height: 170%; color: #777; }
+
+/* Header e footer da aplicação */
+header{ background: url(../images/header-bg.jpg) top left #184448; color: #fff; }
+header h1{ font-size: 1000%; }
+header h2{ font-weight: 100; font-size: 200%; }
+footer{ background: #eee; border-top: 1px solid #ddd; color: #ccc; text-shadow: 1px 1px 0 #FFF; }
+
+/* Menu do topo */
+nav.desktop-menu{ background: #eee; border-bottom: 1px solid #ddd; color: #777777; text-shadow: 1px 1px 0 #FFF; padding: 20px; }
+nav.desktop-menu .list .item{ margin-right: 20px; padding-right: 20px; border-right: 1px solid #777777; }
+nav.desktop-menu .list .item a{ text-decoration: none; }
+
+/* Home - Sobre o bleix */
+#about h2{ font-size: 150%; }
+#about-easy{ width: 400px; }
+
+/* Home - Recursos */
+#resources{ border-top: 1px solid #eeeeee; }
+#resources h1{ font-size: 300%; font-weight: 100; }
+
+/* Sidebar */
+.sidebar{ width: 350px; }
+.sidebar-menu{ background: #000; }
+.sidebar-menu li{ border-bottom: 1px solid #222222; }
+.sidebar-menu li a{ padding: 10px; text-decoration: none; color: #555555; display: block; }
+.sidebar-menu li a:hover{ background: #1a1a1a; }

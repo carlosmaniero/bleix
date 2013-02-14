@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Bleix - Layout Responsivo</title>
+	<!-- Fontes -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bleix.css">
+	<!-- Mobile -->
+	<link rel="stylesheet" href="css/bleix-mobile.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<style type="text/css">
+		.little-column{ width: 150px; }
+	</style>
+</head>
+<body class="bx-padding">
+	<section>
+		<h1>Colunas</h1>
+		<div class="bx-column-parent">
+			<div class="bx-column">
+				<div class="bx-padding">
+					<h2>Atenção</h2>
+					<p>Nunca customize o css da .bx-column. Use uma div interna para isso. </p>
+				</div>
+			</div>
+			<div class="bx-column">
+				<div class="bx-padding">
+					<h2>Lembre-se</h2>
+					<p>Quando as colunas não couberem mais na página elas descerão.</p>
+				</div>
+			</div>
+			<div class="bx-column bx-column-fixed-size little-column">
+				<div class="bx-padding">
+					<h2>Tamanho fixo</h2>
+					<p>Essa é uma coluna com tamanho fixo</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h1>Marcadores de texto</h1>
+
+		<div class="bx-column-parent">
+			<div class="bx-column">
+				<div class="bx-padding">
+					<p>Esse texto é apenas uma <span class="bx-text-info">história</span>: </p>
+					<p>Foi quando derrepente apareceu uma coruja e <span class="bx-text-error">acabou</span> com os planos do caçador, que trazia <span class="bx-text-warning">perigo</span> para a floresta. Agora todos comemoram o <span class="bx-text-success">sucesso</span> da jovem coruja.</p>
+				</div>
+			</div>
+			<div class="bx-column">
+				<div class="bx-padding">
+					<p>Esse texto é apenas uma <span class="bx-mark-info">história</span>: </p>
+					<p>Foi quando derrepente apareceu uma coruja e <span class="bx-mark-error">acabou</span> com os planos do caçador, que trazia <span class="bx-mark-warning">perigo</span> para a floresta. Agora todos comemoram o <span class="bx-mark-success">sucesso</span> da jovem coruja.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scroll-events.js"></script>
+	<script type="text/javascript" src="js/jquery.bleix.js"></script>
+</body>
+</html>
