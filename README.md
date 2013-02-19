@@ -14,6 +14,25 @@ Essa função é responsável em definir qual o estado da página, vejamos o exe
 
 O estado 'mobile' estará ativo quando a largura da página estiver entre 0 e 980.
 
+$.fn.BleixColumn(options)
+----
+
+Plugin responsável em criar colunas adaptáveis, vejamos o exemplo abaixo
+
+	$('#\columns').BleixColumn({ min_size : 400 });
+	
+Por padrão o min_size (tamanho mínimo que uma coluna pode ter) é 250.
+
+Classes que as colunas podem ter:
+
+* .bx-column-fixed (Colunas fixas, ou seja, acompanham a rolagem de scroll)
+* .bx-column-fixed-size (Colunas com tamanhp fixo)
+
+Quando as colunas não cabem mais na tela são atribuidas a elas a classe .bx-column-wrapped.
+
+### Atenção
+Nunca customize as colunas com margem, padding e border.
+
 Nomeclatura
 ----
 Todas as classes do bleix devem começar com o pre-fixo "bx" 
