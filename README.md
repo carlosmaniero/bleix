@@ -10,7 +10,7 @@ $.Bleix.ResponsiveLayout(min,max,state);
 
 Essa função é responsável em definir qual o estado da página, vejamos o exemplo abaixo
 
-  $.Bleix.ResponsiveLayout(0,980,'mobile');
+	$.Bleix.ResponsiveLayout(0,980,'mobile');
 
 O estado 'mobile' estará ativo quando a largura da página estiver entre 0 e 980.
 
@@ -23,7 +23,7 @@ Todas as classes do bleix devem começar com o pre-fixo "bx"
 Todas as classes do css de estados devem começar com a classe do estado. Essa por padrão é .bx-"estado". No caso do exemplo acima será .bx-mobile.
 As classes específicas dos estados também devem seguir a seguinte nomeclaturoa:
 
-  .bx-"estado" .bx-"estado"-"classe"
+	.bx-"estado" .bx-"estado"-"classe"
 
 Vejamos o exemplo do estado mobile a classe text-center.
 .bx-mobile .bx-mobile-text-center{ text-align: center }
