@@ -27,3 +27,17 @@ As classes específicas dos estados também devem seguir a seguinte nomeclaturoa
 
 Vejamos o exemplo do estado mobile a classe text-center.
 .bx-mobile .bx-mobile-text-center{ text-align: center }
+
+### Sobrescrevendo classes
+
+Você também pode sobrescrever classes, isso ocorre quando dois ou mais estados estão ativos ao mesmo tempo. Para sobrescrever basta utilizar a seguinte nomeclatura:
+
+	.bx-"estado1" .bx-"estado2"-"classe"
+
+Isso pode ser utilizado quando, por exemplo a .bx-margin do estado mobile for diferente da .bx-margin do estado padrão. Nesse caso o exemplo ficará da seguinte forma:
+
+	.bx-mobile .bx-margin{ margin: 10px; }
+
+Recursos externos
+----
+* [Normalize.css](http://necolas.github.com/normalize.css/)
