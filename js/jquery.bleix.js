@@ -1,37 +1,31 @@
 (function($){
+	'use strict';
 	// Status atual do documento
-	var status = new Array();
+	var status = [];
 
 	$.Bleix = {};
 	
 	// Adciona um status no Bleix
 	var add_status = function(name){
 		status.push(name);
-	}
+	};
 
 	// Remove um statusn no Bleix
 	var remove_status = function(name){
 		status = $.grep(status, function(value) {
-		  return value != name;
+			return value !== name;
 		});
-	}
-
-	// Verifica se valor está contido no array
-	function in_array(value,array){
-		for (var i = 0; i < array.length; i++) {
-			if(array[i] == value) return true;
-		};
-		return false;
-	}
+	};
 
 	// Verifica se status está ativo
 	$.Bleix.is = function(name){
 		for (var i = 0; i < status.length; i++) {
-			if(status[i] == name)
+			if(status[i] === name){
 				return true;
-		};
+			}
+		}
 		return false;
-	}
+	};
 
 
 
@@ -43,18 +37,20 @@
 			if($('body').width() < max && $('body').width() > min){
 				$('body').addClass('bx-' + status);
 				add_status(status);
-				if(onEnter != undefined)
+				if(onEnter !== undefined){
 					onEnter($('body').width());
+				}
 			}else{
 				$('body').removeClass('bx-' + status);
 				remove_status(status);
-				if(onLeave != undefined)
+				if(onLeave !== undefined){
 					onLeave($('body').width());
+				}
 			}
 		}
 		check_layout();
 		$(window).resize(check_layout);
-	}
+	};
 
 
 
@@ -63,7 +59,7 @@
 	// Bleix Colunas
 	// ====================================================
 	var column_elem = 0; // Inteiro com o número de elementos
-	var column_elem_options = {} // Objeto com as opções dos elementos
+	var column_elem_options = {}; // Objeto com as opções dos elementos
 
 	// Configura as colunas
 	// elem : Elemento que deve ser configurado
@@ -93,7 +89,7 @@
 		}
 
 		$(window).scroll();
-	}
+	};
 
 	// Plugin de configuração das colunas
 	$.fn.BleixColumn = function(settings){
@@ -101,7 +97,7 @@
 		var options = {
 			min_size : 250,
 			duration : 500
-		}
+		};
 
 		$.extend(options,settings);
 
@@ -109,7 +105,8 @@
 			var elem = $(this);
 
 			// Caso plugin já tenha sido invodaco, só reconfigura as colunas
-			if(elem_index = elem.attr('bx-column')){
+			var elem_index = elem.attr('bx-column');
+			if(elem_index){
 				options = column_elem_options[elem_index];
 			}else{
 				elem.attr('bx-column',column_elem).append('<div class="bx-clear"></div>');
@@ -122,11 +119,12 @@
 
 						elem.children('.bx-column-fixed').not('.bx-column-wrapped').each(function(){
 							$(this).stop();
-							$(this).css('position','relative')
-							if($(this).height() + top < elem.height())
+							$(this).css('position','relative');
+							if($(this).height() + top < elem.height()){
 								$(this).css({'top' : top});
-							else
+							}else{
 								$(this).css({'top' : elem.height() - $(this).height()});
+							}
 						});
 						elem.children('.bx-column-wrapped').css('top','');
 					}else{
@@ -145,7 +143,7 @@
 			config_column(elem,options);
 		});
 
-	}
+	};
 
 	// Classe padrão das colunas
 	$('.bx-column-parent').BleixColumn();
@@ -155,8 +153,8 @@
 		for (var i = 0; i < column_elem; i++) {
 			var options = column_elem_options[i];
 			var elem = $('[bx-column=' + i + ']');
-			config_column(elem,options)
-		};
+			config_column(elem,options);
+		}
 	});
 
 	// Configura menus mobile
