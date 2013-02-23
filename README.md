@@ -30,7 +30,7 @@ Classes que as colunas podem ter:
 
 Quando as colunas não cabem mais na tela são atribuidas a elas a classe .bx-column-wrapped.
 
-### Atenção
+### Atenção:
 Nunca customize as colunas com margem, padding e border.
 
 Nomeclatura
