@@ -12,14 +12,14 @@ Essa função é responsável em definir qual o estado da página, vejamos o exe
 
 	$.Bleix.ResponsiveLayout(0,980,'mobile');
 
-O estado 'mobile' estará ativo quando a largura da página estiver entre 0 e 980.
+O estado 'mobile' estará ativo quando a largura da página estiver entre 0px e 980px.
 
 $.fn.BleixColumn(options)
 ----
 
 Plugin responsável em criar colunas adaptáveis, vejamos o exemplo abaixo
 
-	$('#\columns').BleixColumn({ min_size : 400 });
+	$('#columns').BleixColumn({ min_size : 400 });
 	
 Por padrão o min_size (tamanho mínimo que uma coluna pode ter) é 250.
 
@@ -60,3 +60,4 @@ Isso pode ser utilizado quando, por exemplo a .bx-margin do estado mobile for di
 Recursos externos
 ----
 * [Normalize.css](http://necolas.github.com/normalize.css/)
+* [EJS](http://embeddedjs.com/)
