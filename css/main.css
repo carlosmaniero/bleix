@@ -1,0 +1,7 @@
+section section{ margin-left: 20px; }
+.example{ background: #FCFCFF; padding: 20px; border: 1px solid #CCCCFF; }
+#example-icons li{ width: 250px; float: left; margin-bottom: 20px; }
+#example-icons li:hover{ color: #666699; }
+#example-icons li i{ font-size: 32px; }
+#column-nav{ width: 300px; }
+#column-nav.bx-column-wrapped .bx-widget{ margin: 0; }

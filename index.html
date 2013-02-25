@@ -4,24 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Bleix - Layout Responsivo</title>
 	<!-- Fontes -->
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bleix.css">
 	<!-- bx-icones em formato de fonte -->
 	<link rel="stylesheet" href="css/fontello.css">
   <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 	<!-- Mobile -->
 	<link rel="stylesheet" href="css/bleix-mobile.css">
+	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-	<style type="text/css">
-		section section{ margin-left: 20px; }
-		.example{ background: #FCFCFF; padding: 20px; border: 1px solid #CCCCFF; }
-		#example-icons li{ width: 250px; float: left; margin-bottom: 20px; }
-		#example-icons li:hover{ color: #666699; }
-		#example-icons li i{ font-size: 32px; }
-		.bx-column-parent .bx-column-fixed-size{ width: 300px; }
-		.bx-column-parent .bx-column-fixed-size.bx-column-wrapped .bx-widget{ margin: 0; }
-	</style>
 </head>
 <body class="bx-padding">
 
@@ -30,18 +23,20 @@
 	</header>
 
 	<div id="content" class="bx-column-parent">
-		<div class="bx-column bx-column-fixed bx-column-fixed-size">
+		<div class="bx-column bx-column-fixed bx-column-fixed-size" id="column-nav">
 			<div class="bx-widget bx-margin-right">
 				<h1>Menu</h1>
-				<ul>
-					<li><a href="#example-title">Título</a></li>
-					<li><a href="#example-mobile-nav">Navegação mobile</a></li>
-					<li><a href="#example-mark">Marcadores de texto</a></li>
-					<li><a href="#example-column">Colunas</a></li>
-					<li><a href="#example-icons">Icones</a></li>
-					<li><a href="#example-button">Botões</a></li>
-					<li><a href="#example-form">Formulário</a></li>
-				</ul>
+				<nav>
+					<ul>
+						<li><a href="#example-title">Título</a></li>
+						<li><a href="#example-mobile-nav">Navegação mobile</a></li>
+						<li><a href="#example-mark">Marcadores de texto</a></li>
+						<li><a href="#example-column">Colunas</a></li>
+						<li><a href="#example-icons">Icones</a></li>
+						<li><a href="#example-button">Botões</a></li>
+						<li><a href="#example-form">Formulário</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 		<div class="bx-column">
@@ -497,6 +492,8 @@
 							<span class="bx-add-on">px</span>
 						</label>
 
+						<br> <br>
+
 						<label class="bx-input-group">
 							<span class="bx-add-on"><span class="bx-icon-facebook"></span> facebook.com/</span>
 							<input class="bx-input bx-little" />					
@@ -507,12 +504,16 @@
 							<input class="bx-input bx-little" />					
 						</label>
 
+						<br> <br>
+
 						<div class="bx-input-group">
 							<input class="bx-input bx-mini" />
 							<span class="bx-add-on">x</span>
 							<input class="bx-input bx-mini" />
 							<span class="bx-add-on">px</span>
 						</div>
+
+						<br> <br>
 
 						<div class="bx-input-group">
 							<input class="bx-input" />
