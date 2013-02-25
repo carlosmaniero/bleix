@@ -175,6 +175,12 @@
 
 .bx-button.bx-disabled,.bx-button:disabled{ background: #dddddd; }
 
+.bx-button [class^="bx-icon-"]:before,
+.bx-button [class*=" bx-icon-"]:before{
+	width: auto;
+	margin-left: 0;
+}
+
 /* Button group */
 .bx-button-group{ white-space: nowrap; display: inline-block; font-size: 0; }
 .bx-button-group .bx-button{ border-radius: 0; border-left-width: 0; }
@@ -187,7 +193,7 @@
 .bx-widget .bx-content{ font-size: 80%; }
 
 /* Inputs */
-.bx-input, .bx-input{ 
+.bx-input{ 
 	box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05);
 	-moz-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05);
 	-webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.05);
@@ -202,10 +208,14 @@
 
 /* Tamanhos */
 .bx-input.bx-mini{ width: 30px; }
-.bx-input.bx-little{ width: 70px; }
+.bx-input.bx-little{ width: 90px; }
+.bx-input.bx-middle{ width: 150px; }
+.bx-input.bx-big{ width: 300px; }
 
 /* Estados */
 .bx-input.bx-error{ border-color: #FF9999; }
+.bx-input.bx-success{ border-color: #99FF99; }
+.bx-input.bx-warning{ border-color: #ffcc33; }
 
 /* Marcadores */
 .bx-mark,.bx-mark-error,.bx-mark-warning,.bx-mark-success,.bx-mark-info{ 
