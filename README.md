@@ -14,7 +14,7 @@ Essa função é responsável em definir qual o estado da página, vejamos o exe
 
 O estado 'mobile' estará ativo quando a largura da página estiver entre 0px e 980px.
 
-[Responsive](http://www.maniero.tk/bleix/responsive.png)
+![Responsive](http://www.maniero.tk/bleix/responsive.png)
 
 $.fn.BleixColumn(options)
 ----
