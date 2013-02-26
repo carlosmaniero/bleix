@@ -147,17 +147,24 @@
 	$.fn.BleixHorizontalAjust = function(){
 		$(this).each(function(){
 			var parent_width = $(this).parent().width();
-			
 			var width = $(this).width();
-			$(this).outerWidth(parent_width);
-			var corect_width = $(this).width();
 
+			$(this).outerWidth(parent_width);
+
+			var corect_width = $(this).width();
 			var resize = $(this).children().not('.bx-keep-size').not('.bx-keep-horizontal-size');
 
 			if(resize.length){
-				var ajust_to = (width - corect_width) / resize.length;
+
+				var keep_size = 0;
+				$(this).children('.bx-keep-size,.bx-keep-horizontal-size').each(function(){
+					keep_size += $(this).outerWidth();
+				});
+
+				var ajust_to = (corect_width - keep_size) / resize.length;
+
 				resize.each(function(){
-					$(this).outerWidth($(this).outerWidth() - ajust_to);
+					$(this).outerWidth(ajust_to);
 				});
 			}
 		});
@@ -175,6 +182,9 @@
 
 			if(resize.length){
 				var ajust_to = (height - corect_height) / resize.length;
+
+				console.log(ajust_to);
+
 				resize.each(function(){
 					$(this).outerHeight($(this).outerHeight() - ajust_to);
 				});
