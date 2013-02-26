@@ -47,7 +47,8 @@ As classes específicas dos estados também devem seguir a seguinte nomeclaturoa
 	.bx-"estado" .bx-"estado"-"classe"
 
 Vejamos o exemplo do estado mobile a classe text-center.
-.bx-mobile .bx-mobile-text-center{ text-align: center }
+
+	.bx-mobile .bx-mobile-text-center{ text-align: center }
 
 ### Sobrescrevendo classes
 
