@@ -67,12 +67,12 @@
 	var config_column = function(elem, options){
 		elem.children('.bx-column').removeClass('bx-column-wrapped');
 
-		var columns = elem.children('.bx-column').not('.bx-column-fixed-size');
+		var columns = elem.children('.bx-column').not('.bx-keep-size, .bx-keep-horizontal-size');
 		var width = elem.width();
 
 
 		// Define a largura útil das colunas
-		elem.children('.bx-column-fixed-size').each(function(){
+		elem.children('.bx-keep-size, .bx-keep-horizontal-size').each(function(){
 			width -= $(this).width();
 		});
 
@@ -131,10 +131,6 @@
 						elem.children('.bx-column-fixed').not('.bx-column-wrapped').css({'top' : 0});
 					}
 				});
-				// Para a animação quando o scroll é ativo
-				//$(window).bind('scrollstart',function(){
-				//	elem.children('.bx-column-fixed').stop();
-				//});
 
 				column_elem_options[column_elem] = options;
 				column_elem++;
@@ -145,16 +141,57 @@
 
 	};
 
-	// Classe padrão das colunas
-	$('.bx-column-parent').BleixColumn();
+	// ====================================================
+	// Ajusta os elementos para oculpar 100% da tela n
+	// ====================================================
+	$.fn.BleixHorizontalAjust = function(){
+		$(this).each(function(){
+			var parent_width = $(this).parent().width();
+			
+			var width = $(this).width();
+			$(this).outerWidth(parent_width);
+			var corect_width = $(this).width();
 
-	// Configura as colunas pelo resize
+			var resize = $(this).children().not('.bx-keep-size').not('.bx-keep-horizontal-size');
+
+			if(resize.length){
+				var ajust_to = (width - corect_width) / resize.length;
+				resize.each(function(){
+					$(this).outerWidth($(this).outerWidth() - ajust_to);
+				});
+			}
+		});
+	};
+
+	$.fn.BleixVerticalAjust = function(){
+		$(this).each(function(){
+			var parent_height = $(this).parent().height();
+			
+			var height = $(this).height();
+			$(this).outerHeight(parent_height);
+			var corect_height = $(this).height();
+
+			var resize = $(this).children().not('.bx-keep-size').not('.bx-keep-vertical-size');
+
+			if(resize.length){
+				var ajust_to = (height - corect_height) / resize.length;
+				resize.each(function(){
+					$(this).outerHeight($(this).outerHeight() - ajust_to);
+				});
+			}
+		});
+	};
+
 	$(window).resize(function(){
+		// Configura as colunas pelo resize
 		for (var i = 0; i < column_elem; i++) {
 			var options = column_elem_options[i];
 			var elem = $('[bx-column=' + i + ']');
 			config_column(elem,options);
 		}
+		// Ajusta colunas
+		$('.bx-horizontal-ajust').BleixHorizontalAjust();
+		$('.bx-vertical-ajust').BleixVerticalAjust();
 	});
 
 	// Configura menus mobile
@@ -164,6 +201,12 @@
 			$(this).parents('.bx-mobile-nav').children('.bx-mobile-nav-list').toggle(500);
 		});
 	});
+
+
+	// Classes padrão
+	$('.bx-column-parent').BleixColumn();
+	$('.bx-horizontal-ajust').BleixHorizontalAjust();
+	$('.bx-vertical-ajust').BleixVerticalAjust();
 
 
 })(jQuery);
