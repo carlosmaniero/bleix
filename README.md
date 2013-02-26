@@ -28,7 +28,7 @@ Por padrão o min_size (tamanho mínimo que uma coluna pode ter) é 250.
 Classes que as colunas podem ter:
 
 * .bx-column-fixed (Colunas fixas, ou seja, acompanham a rolagem de scroll)
-* .bx-column-fixed-size (Colunas com tamanhp fixo)
+* .bx-keep-size, .bx-keep-horizontal-size (Colunas com tamanho fixo)
 
 Quando as colunas não cabem mais na tela são atribuidas a elas a classe .bx-column-wrapped.
 
